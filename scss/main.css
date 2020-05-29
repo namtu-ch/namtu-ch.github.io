@@ -351,6 +351,39 @@ body {
   padding: 0 1rem;
 }
 
+@media screen and (max-width: 1500px) {
+  .groceries-container {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2 / 14;
+    background-color: #eee;
+    margin: 2rem 0 5rem 0;
+    padding: 0 5rem;
+    border-radius: .5rem;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    -webkit-box-shadow: 0.5rem 0.3rem 1rem rgba(128, 126, 126, 0.712);
+            box-shadow: 0.5rem 0.3rem 1rem rgba(128, 126, 126, 0.712);
+  }
+  .category-first {
+    font-size: 2.5rem;
+    margin: 5rem 0 2rem 1rem;
+  }
+  .category {
+    font-size: 2.5rem;
+    margin: 2rem 0 2rem 1rem;
+  }
+  .grocery-item {
+    display: inline-block;
+    padding: 2rem 3.5rem;
+    background-color: #9DC8C8;
+    margin: 0.5rem 0.5rem;
+    border-radius: .5rem;
+    font-size: 1.85rem;
+  }
+}
+
 .movies-container {
   -ms-grid-column: 4;
   -ms-grid-column-span: 10;
