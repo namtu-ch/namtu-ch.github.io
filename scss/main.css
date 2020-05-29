@@ -100,6 +100,43 @@ body {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 1500px) {
+  .dinner-container {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2 / 14;
+    background-color: #eee;
+    margin: 0.1rem 0;
+    border-radius: .5rem;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    -webkit-box-shadow: 0.5rem 0.3rem 1rem rgba(128, 126, 126, 0.712);
+            box-shadow: 0.5rem 0.3rem 1rem rgba(128, 126, 126, 0.712);
+  }
+  .menu-item {
+    margin: 10rem auto 0 auto;
+  }
+  .day {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+  .day-of-the-week {
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  .entree__primary,
+  .entree__secondary {
+    font-size: 3rem;
+  }
+  .entree__primary-description,
+  .entree__secondary-description {
+    font-size: 1.5rem;
+  }
+}
+
 .nav-container {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -128,28 +165,6 @@ body {
   width: 50%;
   padding-top: 4rem;
   border-bottom: 0.5rem solid #519d9e;
-}
-
-@media screen and (max-width: 1500px) {
-  .logo {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0;
-    margin-right: auto;
-    padding: 1.5rem 1rem;
-  }
-  .logo-chat {
-    max-width: 7.5rem;
-    display: inline-block;
-  }
-  .logo::after {
-    content: '';
-    display: block;
-    width: 0;
-    padding-top: 0;
-    border-bottom: none;
-  }
 }
 
 .navbar li {
@@ -214,6 +229,27 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 2rem 0;
+    padding: 0 5rem;
+  }
+  .logo {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+    margin-right: auto;
+    padding: 1.5rem 0;
+  }
+  .logo-chat {
+    max-width: 7.5rem;
+    display: inline-block;
+  }
+  .logo::after {
+    content: '';
+    display: block;
+    width: 0;
+    padding-top: 0;
+    border-bottom: none;
   }
   .navbar ul {
     display: -webkit-box;
@@ -236,6 +272,7 @@ body {
   }
   .navbar li:last-child {
     margin-bottom: 0;
+    padding-right: 0;
   }
   .navbar li a {
     text-decoration: none;

@@ -23,29 +23,6 @@
     border-bottom: .5rem solid $primary-color;
 }
 
-@media screen and (max-width: 1500px) {
-
-    .logo {
-        width: fit-content;
-        margin: 0;
-        margin-right: auto;
-        padding: 1.5rem 1rem;
-    }
-
-    .logo-chat {
-        max-width: 7.5rem;
-        display: inline-block;
-    }
-
-    .logo::after {
-        content: '';
-        display: block;
-        width: 0;
-        padding-top: 0;
-        border-bottom: none;
-    }
-}
-
 //     position: absolute;
 //     height: 1rem;
 //     width: 50%;
@@ -106,9 +83,29 @@
         box-shadow: .5rem .3rem 1rem rgba(128, 126, 126, 0.712);
         display: flex;
         align-items: center;
+        margin: 2rem 0;
+        padding: 0 5rem; //to match the 5rem left and right gutters
     }
 
+    .logo {
+        width: fit-content;
+        margin: 0;
+        margin-right: auto;
+        padding: 1.5rem 0;
+    }
 
+    .logo-chat {
+        max-width: 7.5rem;
+        display: inline-block;
+    }
+
+    .logo::after {
+        content: '';
+        display: block;
+        width: 0;
+        padding-top: 0;
+        border-bottom: none;
+    }
 
     .navbar ul {
         display: flex;
@@ -129,6 +126,7 @@
 
         &:last-child {
             margin-bottom: 0;
+            padding-right: 0;
         }
     }
 
