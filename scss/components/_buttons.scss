@@ -1,0 +1,18 @@
+.btn {
+    background-color: $tertiary-color;
+    width: min-content;
+    padding: 1rem 1.75rem;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+
+.movie-btn {
+    align-self: flex-end;
+    margin: 3rem 3rem 0 0;
+    display: inline-block;
+    font-size: 1.75rem;
+    text-decoration: none;
+}

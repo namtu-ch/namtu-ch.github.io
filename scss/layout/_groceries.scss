@@ -1,0 +1,57 @@
+.groceries-container {
+    grid-column: 11 / 14;
+    background-color: #eee;
+    margin: 10rem 0;
+    border-radius: .5rem;
+    height: min-content;
+    box-shadow: .5rem .3rem 1rem rgba(128, 126, 126, 0.712);
+}
+
+.list {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 5rem;
+
+    &::after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        padding-top: 2rem;
+        border-bottom: .5rem solid $primary-color;
+    }
+}
+
+.list-container {
+    padding: 0 1rem;
+}
+
+.category-first {
+    font-size: 2rem;
+    margin: 5rem 0 1.5rem 1rem;
+}
+
+.category {
+    font-size: 2rem;
+    margin: 2rem 0 1.5rem 1rem;
+}
+
+.grocery-item {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background-color: $tertiary-color;
+    margin: 0.5rem 0.5rem;
+    border-radius: .5rem;
+    font-size: 1.25rem;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $secondary-color;
+    }
+}
+
+.list-container-last {
+    margin-bottom: 5rem;
+    padding: 0 1rem;
+}

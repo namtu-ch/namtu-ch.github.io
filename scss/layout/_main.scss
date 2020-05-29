@@ -1,0 +1,53 @@
+.dinner-container {
+    grid-column: 4 / 11;
+    background-color: #eee;
+    margin: 10rem 0;
+    border-radius: .5rem;
+    height: min-content;
+    box-shadow: .5rem .3rem 1rem rgba(128, 126, 126, 0.712);
+}
+
+.menu {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 5rem;
+
+    &::after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        padding-top: 2rem;
+        border-bottom: .5rem solid $primary-color;
+    }
+}
+
+.menu-item {
+    width: 90%;
+    margin: 5rem auto 0 auto;
+    display: flex;
+
+    &:last-child {
+        margin-bottom: 5rem;
+    }
+}
+
+.day-of-the-week {
+    padding: 0 3rem 0 0;
+    width: 15rem;
+    font-size: 2rem;
+}
+
+.entree__primary,
+.entree__secondary {
+    font-size: 2.5rem;
+}
+
+.entree__secondary {
+    margin-top: 1rem;
+}
+
+.entree__primary-description,
+.entree__secondary-description {
+    font-size: 1.5rem;
+}
