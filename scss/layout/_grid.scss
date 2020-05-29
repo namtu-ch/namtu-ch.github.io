@@ -1,5 +1,11 @@
 .grid-container {
     display: grid;
-    grid-template-columns: minmax(5rem, 0.5fr) repeat(12, minmax(100px, 1fr)) minmax(5rem, 0.5fr);
+    grid-template-columns: minmax(5rem, 0.5fr) repeat(12, minmax(75px, 1fr)) minmax(5rem, 0.5fr);
     column-gap: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: $secondary-color;
+    }
 }
