@@ -23,6 +23,29 @@
     border-bottom: .5rem solid $primary-color;
 }
 
+@media screen and (max-width: 1500px) {
+
+    .logo {
+        width: fit-content;
+        margin: 0;
+        margin-right: auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .logo-chat {
+        max-width: 7.5rem;
+        display: inline-block;
+    }
+
+    .logo::after {
+        content: '';
+        display: block;
+        width: 0;
+        padding-top: 0;
+        border-bottom: none;
+    }
+}
+
 //     position: absolute;
 //     height: 1rem;
 //     width: 50%;
@@ -72,4 +95,58 @@
 .current {
     min-width: min-content;
     border-bottom: .5rem solid $secondary-color;
+}
+
+@media screen and (max-width: 1500px) {
+    .nav-container {
+        grid-column: 2 / 14;
+        background-color: #eee;
+        border-radius: .5rem;
+        height: min-content;
+        box-shadow: .5rem .3rem 1rem rgba(128, 126, 126, 0.712);
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar li {
+        width: min-content;
+        height: 4rem;
+        margin: 0rem;
+        list-style: none;
+        padding: 0 2rem;
+        font-size: 2rem;
+        font-weight: 700;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: $black;
+
+        &:hover,
+        &:focus {
+            min-width: min-content;
+            border-bottom: .5rem solid $secondary-color;
+        }
+
+        &:visited,
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $black;
+        }
+    }
 }

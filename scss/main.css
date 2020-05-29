@@ -26,13 +26,14 @@ body {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(5rem, 0.5fr) (minmax(75px, 1fr))[12] minmax(5rem, 0.5fr);
-      grid-template-columns: minmax(5rem, 0.5fr) repeat(12, minmax(75px, 1fr)) minmax(5rem, 0.5fr);
+  -ms-grid-columns: minmax(min-content, 0.5fr) (minmax(75px, 1fr))[12] minmax(5rem, 0.5fr);
+      grid-template-columns: minmax(-webkit-min-content, 0.5fr) repeat(12, minmax(75px, 1fr)) minmax(5rem, 0.5fr);
+      grid-template-columns: minmax(min-content, 0.5fr) repeat(12, minmax(75px, 1fr)) minmax(5rem, 0.5fr);
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
   body {
     background-color: #58C9B9;
   }
@@ -129,6 +130,28 @@ body {
   border-bottom: 0.5rem solid #519d9e;
 }
 
+@media screen and (max-width: 1500px) {
+  .logo {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+    margin-right: auto;
+    padding: 1.5rem 1rem;
+  }
+  .logo-chat {
+    max-width: 7.5rem;
+    display: inline-block;
+  }
+  .logo::after {
+    content: '';
+    display: block;
+    width: 0;
+    padding-top: 0;
+    border-bottom: none;
+  }
+}
+
 .navbar li {
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -171,6 +194,63 @@ body {
   min-width: -moz-min-content;
   min-width: min-content;
   border-bottom: 0.5rem solid #58C9B9;
+}
+
+@media screen and (max-width: 1500px) {
+  .nav-container {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2 / 14;
+    background-color: #eee;
+    border-radius: .5rem;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    -webkit-box-shadow: 0.5rem 0.3rem 1rem rgba(128, 126, 126, 0.712);
+            box-shadow: 0.5rem 0.3rem 1rem rgba(128, 126, 126, 0.712);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar li {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    height: 4rem;
+    margin: 0rem;
+    list-style: none;
+    padding: 0 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .navbar li:first-child {
+    margin-top: 0;
+  }
+  .navbar li:last-child {
+    margin-bottom: 0;
+  }
+  .navbar li a {
+    text-decoration: none;
+    color: #101010;
+  }
+  .navbar li a:hover, .navbar li a:focus {
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
+    border-bottom: 0.5rem solid #58C9B9;
+  }
+  .navbar li a:visited, .navbar li a:hover, .navbar li a:focus {
+    text-decoration: none;
+    color: #101010;
+  }
 }
 
 .groceries-container {
