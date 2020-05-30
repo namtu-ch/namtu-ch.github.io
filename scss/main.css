@@ -48,6 +48,28 @@ body {
   body {
     background-color: rgba(192, 192, 37, 0.204);
   }
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: minmax(2rem, 0.5fr) (minmax(2rem, 1fr))[12] minmax(2rem, 0.5fr);
+        grid-template-columns: minmax(2rem, 0.5fr) repeat(12, minmax(2rem, 1fr)) minmax(2rem, 0.5fr);
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    background-color: lightsteelblue;
+  }
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5rem (1fr)[12] 0.5rem;
+        grid-template-columns: 0.5rem repeat(12, 1fr) 0.5rem;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
 }
 
 .dinner-container {
@@ -145,6 +167,34 @@ body {
   .entree__primary-description,
   .entree__secondary-description {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .menu {
+    font-size: 3.5rem;
+  }
+  .day-of-the-week {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5rem auto 0 auto;
+  }
+  .day {
+    margin-bottom: 1rem;
+  }
+  .day-of-the-week {
+    font-weight: 400;
   }
 }
 
@@ -418,6 +468,25 @@ body {
     margin: 0.5rem 0.5rem;
     border-radius: .5rem;
     font-size: 1.85rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .grocery-item {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .groceries-container {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2 / 14;
+    padding: 0.5rem;
+  }
+  .grocery-item {
+    font-size: 1.25rem;
   }
 }
 

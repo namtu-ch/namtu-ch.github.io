@@ -86,3 +86,21 @@
         font-size: 1.85rem;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .grocery-item {
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .groceries-container {
+        grid-column: 2 / 14;
+        padding: 0.5rem;
+    }
+
+    .grocery-item {
+        font-size: 1.25rem;
+    }
+}
