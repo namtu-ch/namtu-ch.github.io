@@ -1,11 +1,24 @@
 .grid-container {
     display: grid;
-    grid-template-columns: minmax(min-content, 0.5fr) repeat(12, minmax(75px, 1fr)) minmax(5rem, 0.5fr);
+    grid-template-columns: minmax(5rem, 0.5fr) repeat(12, minmax(3rem, 1fr)) minmax(5rem, 0.5fr);
     column-gap: 2rem;
 }
 
 @media screen and (max-width: 1500px) {
     body {
         background-color: $secondary-color;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+
+    body {
+        background-color: lightgrey;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: rgba(192, 192, 37, 0.204);
     }
 }

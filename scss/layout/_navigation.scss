@@ -148,3 +148,21 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .nav-container {
+        grid-column: 2 / 14;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: .5rem;
+        height: min-content;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+        padding: 0 5rem; //to match the 5rem left and right gutters
+    }
+
+    .navbar {
+        display: none;
+    }
+}

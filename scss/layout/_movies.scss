@@ -149,7 +149,7 @@
             font-size: 5rem;
             font-weight: 700;
             margin: 0 0 3rem 5rem;
-            width: 50%;
+            width: 75%;
             line-height: 1.3;
         }
 
@@ -160,5 +160,21 @@
             margin: 0 0 5rem 5rem;
             width: 65%;
         }
+    }
+
+    .sub-movies-container-asib {
+        grid-column: span 3;
+    }
+
+    .sub-movies-container-mask {
+        grid-column: span 3;
+    }
+
+    .sub-movies-container-fight {
+        grid-column: span 3;
+    }
+
+    .sub-movies-container-kubo {
+        grid-column: span 3;
     }
 }
