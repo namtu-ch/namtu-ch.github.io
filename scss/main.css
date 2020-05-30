@@ -680,7 +680,7 @@ body {
 }
 
 .tv-show__contents--description {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 
@@ -707,6 +707,31 @@ body {
 .box2 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+@media screen and (max-width: 1500px) {
+  .tv-container {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2 / 14;
+    margin: 0;
+    border-radius: .5rem;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(10rem, 1fr))[6];
+        grid-template-columns: repeat(6, minmax(10rem, 1fr));
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+  .tv-show__contents--title {
+    font-size: 3rem;
+  }
+  .tv-show__contents--description {
+    font-size: 1.7rem;
+  }
 }
 
 .btn {

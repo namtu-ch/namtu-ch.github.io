@@ -48,7 +48,7 @@
     }
 
     &__contents--description {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: 2rem;
     }
 }
@@ -74,4 +74,27 @@
 
 .box2 {
     flex-basis: 50%;
+}
+
+@media screen and (max-width: 1500px) {
+    .tv-container {
+        grid-column: 2 / 14;
+        margin: 0;
+        border-radius: .5rem;
+        height: min-content;
+        display: grid;
+        grid-template-columns: repeat(6, minmax(10rem, 1fr));
+        column-gap: 2rem;
+    }
+
+    .tv-show {
+
+        &__contents--title {
+            font-size: 3rem;
+        }
+
+        &__contents--description {
+            font-size: 1.7rem;
+        }
+    }
 }
