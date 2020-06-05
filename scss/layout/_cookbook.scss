@@ -1,0 +1,62 @@
+.cookbook-container {
+    grid-column: 4 / 14;
+    margin: 10rem 0;
+    border-radius: .5rem;
+    height: min-content;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(10rem, 1fr));
+    column-gap: 2rem;
+}
+
+.highlight-monthly {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    min-height: 50rem;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(81, 157, 158, 0.3)), url(/img/gochujang-chicken.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: .5rem;
+    box-shadow: .5rem .3rem 1rem rgba(128, 126, 126, 0.712);
+}
+
+.highlight-monthly .card {
+    &__ingredient--title {
+        font-size: 4rem;
+        margin-bottom: auto;
+    }
+
+    &__ingredient--header {
+        font-size: 2.5rem;
+    }
+
+    &__ingredient {
+        font-size: 1.3rem;
+    }
+
+    &__prep--title {
+        font-size: 2.5rem;
+        margin-top: auto;
+    }
+
+    &__prep--step {
+        font-size: 2rem;
+    }
+
+    &__prep {
+        font-size: 1.5rem;
+    }
+}
+
+.highlight-monthly .ingredients-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 35%;
+}
+
+.highlight-monthly .preparation-container {
+    display: flex;
+    flex-direction: column;
+}
