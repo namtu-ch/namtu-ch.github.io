@@ -869,79 +869,7 @@ body {
           column-gap: 2rem;
 }
 
-.highlight-monthly {
-  grid-column: 1 / -1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  min-height: 50rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(81, 157, 158, 0.3))), url(/img/gochujang-chicken.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(81, 157, 158, 0.3)), url(/img/gochujang-chicken.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: .5rem;
-  -webkit-box-shadow: 0.5rem 0.3rem 1rem rgba(128, 126, 126, 0.712);
-          box-shadow: 0.5rem 0.3rem 1rem rgba(128, 126, 126, 0.712);
-}
-
-.highlight-monthly .card__ingredient--title {
-  font-size: 4rem;
-  margin-bottom: auto;
-}
-
-.highlight-monthly .card__ingredient--header {
-  font-size: 2.5rem;
-}
-
-.highlight-monthly .card__ingredient {
-  font-size: 1.3rem;
-}
-
-.highlight-monthly .card__prep--title {
-  font-size: 2.5rem;
-  margin-top: auto;
-}
-
-.highlight-monthly .card__prep--step {
-  font-size: 2rem;
-}
-
-.highlight-monthly .card__prep {
-  font-size: 1.5rem;
-}
-
-.highlight-monthly .ingredients-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 35%;
-          flex: 1 0 35%;
-}
-
-.highlight-monthly .preparation-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.sample {
+.monthly {
   grid-column: 1 / -1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -964,16 +892,46 @@ body {
           box-shadow: 0.5rem 0.3rem 1rem rgba(128, 126, 126, 0.712);
 }
 
-.sample-feature {
+.monthly-feature {
   background-color: #58C9B9;
-  width: 10%;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0 0 0 7.5%;
+  padding: 3.5rem;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  z-index: 2;
+  text-transform: uppercase;
 }
 
-.sample-recipe {
-  background-color: #eeeeee;
+.monthly-feature h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.monthly-recipe {
+  background-color: #e4e4e4;
   width: 30%;
   padding: 5rem 7.5rem;
   margin: 0 0 7.5% 7.5%;
+  z-index: 1;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0.5rem 0.3rem 1rem rgba(88, 88, 88, 0.714);
+          box-shadow: 0.5rem 0.3rem 1rem rgba(88, 88, 88, 0.714);
+}
+
+.monthly-recipe h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.weekly {
+  grid-column: span 2;
+  background-color: #e4e4e4;
+  height: 50rem;
 }
 
 .btn {
