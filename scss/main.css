@@ -890,6 +890,7 @@ body {
   border-radius: .5rem;
   -webkit-box-shadow: 0.5rem 0.3rem 1rem rgba(128, 126, 126, 0.712);
           box-shadow: 0.5rem 0.3rem 1rem rgba(128, 126, 126, 0.712);
+  margin-bottom: 2rem;
 }
 
 .monthly-feature {
@@ -916,15 +917,15 @@ body {
   background-color: #e4e4e4;
   width: 30%;
   padding: 5rem 7.5rem;
-  margin: 0 0 7.5% 7.5%;
+  margin: 0 0 5.5% 7.5%;
   z-index: 1;
   border-radius: .5rem;
   -webkit-box-shadow: 0.5rem 0.3rem 1rem rgba(88, 88, 88, 0.714);
           box-shadow: 0.5rem 0.3rem 1rem rgba(88, 88, 88, 0.714);
 }
 
-.monthly-recipe h3 {
-  font-size: 2rem;
+.monthly-recipe h2 {
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -932,6 +933,57 @@ body {
   grid-column: span 2;
   background-color: #e4e4e4;
   height: 50rem;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0.5rem 0.3rem 1rem rgba(128, 126, 126, 0.712);
+          box-shadow: 0.5rem 0.3rem 1rem rgba(128, 126, 126, 0.712);
+  margin-bottom: 2rem;
+}
+
+.weekly__image {
+  height: 30rem;
+}
+
+.weekly__html-image {
+  height: 30rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.weekly__info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 20rem;
+  padding: 2rem 4rem;
+}
+
+.weekly__title h2 {
+  font-size: 2.5rem;
+}
+
+.weekly__author {
+  font-size: 1.8rem;
+}
+
+.weekly__time-req {
+  font-size: 1.5rem;
+  margin-top: auto;
+}
+
+.weekly__overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
 
 .btn {
