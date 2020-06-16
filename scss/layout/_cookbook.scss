@@ -106,6 +106,71 @@
     }
 }
 
+@media screen and (max-width: 1500px) {
+    .cookbook-container {
+        grid-column: 2 / 14;
+        margin: 0;
+        border-radius: .5rem;
+        height: min-content;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 2rem;
+    }
+
+    .monthly {
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 50rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/img/gochujang-chicken.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: .5rem;
+        box-shadow: .5rem .3rem 1rem rgba(128, 126, 126, 0.712);
+        margin-bottom: 2rem;
+    }
+
+    .weekly {
+        grid-column: span 3;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .monthly-feature {
+        background-color: $secondary-color;
+        width: min-content;
+        margin: 0 0 0 10.5%;
+        padding: 3.5rem;
+        border-radius: 50%;
+        transform: translate(-50%, 50%);
+        z-index: 2;
+        text-transform: uppercase;
+
+        & h3 {
+            // Recipe of the Month sticker
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    }
+
+    .monthly-recipe {
+        grid-column: span 2;
+        background-color: #e4e4e4;
+        height: min-content;
+        width: 85%;
+        border-radius: .5rem;
+        box-shadow: .5rem .3rem 1rem rgba(128, 126, 126, 0.712);
+        margin-bottom: 2rem;
+    }
+
+    .weekly {
+        grid-column: 1 / -1;
+    }
+}
+
 // .highlight-monthly {
 //     grid-column: 1 / -1;
 //     display: flex;
@@ -157,4 +222,3 @@
 // .highlight-monthly .preparation-container {
 //     display: flex;
 //     flex-direction: column;
-// 
