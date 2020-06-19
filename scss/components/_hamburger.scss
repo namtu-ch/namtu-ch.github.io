@@ -15,14 +15,14 @@ body {
     /* needed because hiding the menu on the right side is not perfect,  */
 }
 
-a {
+.hamburger-link {
     text-decoration: none;
     color: #232323;
 
     transition: color 0.3s ease;
 }
 
-a:hover {
+.hamburger-link:hover {
     color: $secondary-color;
 }
 

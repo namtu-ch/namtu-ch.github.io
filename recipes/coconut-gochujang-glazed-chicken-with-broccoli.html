@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/scss/main.css">
+    <title>Document</title>
+
+<body>
+    <div class="grid-container">
+
+        <!-- Hamburger -->
+        <nav role="navigation">
+            <div id="menuToggle">
+                <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+                <input type="checkbox" />
+
+                <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+                <ul id="menu">
+                    <a href="/index.html" class="hamburger-link">
+                        <li>Home</li>
+                    </a>
+                    <a href="/cookbook.html" class="hamburger-link">
+                        <li>Cookbook</li>
+                    </a>
+                    <a href="/movies.html" class="hamburger-link">
+                        <li>Movies</li>
+                    </a>
+                    <a href="/tv.html" class="hamburger-link">
+                        <li>TV</li>
+                    </a>
+                    <a href="#" class="hamburger-link">
+                        <li>Books</li>
+                    </a>
+                    <a href="#" class="hamburger-link">
+                        <li>Chores</li>
+                    </a>
+                    <a href="#" class="hamburger-link">
+                        <li>Health</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/img/chat.svg" alt="" class="logo-chat">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li class="nav-item"><a href="/index.html">Home</a></li>
+                    <li class="nav-item"><a href="/cookbook.html">Cookbook</a></li>
+                    <li class="nav-item"><a href="/movies.html" class="current">Movies</a></li>
+                    <li class="nav-item"><a href="/tv.html">TV</a></li>
+                    <li class="nav-item">Books</li>
+                    <li class="nav-item">Chores</li>
+                    <li class="nav-item">Health</li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="recipes-container">
+
+            <section class="recipe-picture">
+                <img src="/img/gochujang-chicken.jpg" alt="Coconut Gochujang Glazed Chicken with Broccoli"
+                    class="recipe-picture__html-image">
+            </section>
+
+            <section class="recipe-title">
+
+            </section>
+
+            <section class="recipe-ingredients">
+                asdf
+            </section>
+
+            <section class="recipe-procedures">
+                Asdf
+            </section>
+
+            <section class="recipe-notes">
+                6/17/20 Cook it a little slower next time
+            </section>
+        </main>
+</body>
+</head>
+
+</html>
