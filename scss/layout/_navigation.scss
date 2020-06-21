@@ -6,7 +6,17 @@
     border-radius: .5rem;
     height: min-content;
     box-shadow: .5rem .3rem 1rem rgba(128, 126, 126, 0.712);
+    z-index: 5;
 }
+
+@media screen and (min-width: 1000px) {
+    .nav-container {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 2rem;
+    }
+}
+
 
 .logo-chat {
     max-width: 20rem;

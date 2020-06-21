@@ -9,6 +9,34 @@
     }
 }
 
+.recipe-btn {
+    width: max-content;
+    padding: 1rem 1.75rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+
+    &--fat {
+        background-color: $recipe-btn-fat;
+    }
+
+    &--spice {
+        background-color: $recipe-btn-spice;
+    }
+
+    &--veggie {
+        background-color: $recipe-btn-veggie;
+    }
+
+    &--meat {
+        background-color: $recipe-btn-meat;
+    }
+
+    &--equip {
+        background-color: $recipe-btn-equip;
+    }
+}
+
+
 .movie-btn {
     align-self: flex-end;
     margin: 3rem 3rem 0 0;

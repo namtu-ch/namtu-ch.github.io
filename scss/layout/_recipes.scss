@@ -5,11 +5,12 @@
     height: min-content;
     display: grid;
     grid-template-columns: repeat(6, minmax(10rem, 1fr));
-    column-gap: 2rem;
+    // column-gap: 2rem;
 }
 
 .recipe-picture {
     grid-column: -1 / 1;
+    height: 50rem;
     box-shadow: .5rem .3rem 1rem rgba(128, 126, 126, 0.712);
 
     &__html-image {
@@ -21,32 +22,149 @@
     }
 }
 
-.recipe-title {
+// Recipe content section
+.recipe-content {
     grid-column: -1 / 1;
     padding: 2rem;
     margin: 2rem 0;
     background-color: #eeeeee;
     border-radius: .5rem;
     box-shadow: .5rem .3rem 1rem rgba(128, 126, 126, 0.712);
+
+
+    &__title {
+        font-size: 4rem;
+        max-width: 85%;
+        margin-bottom: 1rem;
+        text-decoration: underline;
+        text-decoration-color: $secondary-color;
+    }
+
+    &__yield,
+    &__time {
+        font-size: 1.6rem;
+    }
+
+    &__time {
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        font-size: 2rem;
+    }
+
+    &__notes--header {
+        font-size: 3rem;
+        text-decoration: underline;
+        text-decoration-color: $secondary-color;
+        margin: 2rem 0;
+    }
+
+    &__notes--description {
+        font-size: 2rem;
+    }
 }
 
-
+// Ingredients Container Section
 .recipe-ingredients {
     grid-column: 1 / 3;
-    background-color: lightcyan;
+    background-color: rgba(224, 255, 255, 0.507);
     height: min-content;
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
+    top: 2rem;
+    border-radius: .5rem;
+    box-shadow: .5rem .3rem 1rem rgba(128, 126, 126, 0.712);
+
+    &__header {
+        display: inline-block;
+        font-size: 3rem;
+        padding-top: 1rem;
+        margin: 0 0 3rem 2rem;
+        min-width: min-content;
+        border-bottom: .5rem solid $secondary-color;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: flex;
+        padding: 1rem;
+
+        &:first-child {
+            padding-top: 0rem;
+        }
+    }
+
+    &__quantity {
+        flex-basis: 30%;
+        display: inline-block;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    &__name {
+        flex-basis: 70%;
+        display: inline-block;
+        padding: 0.5rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
 }
 
+
+
+// Recipe Prep section
 .recipe-preparation {
     grid-column: 3 / 7;
-    background-color: lightgoldenrodyellow;
+    background-color: #eee;
+    border-radius: .5rem;
+    box-shadow: .5rem .3rem 1rem rgba(128, 126, 126, 0.712);
+
+    &__ingredients-container {
+        display: flex;
+    }
+
+    &__header {
+        display: inline-block;
+        font-size: 3rem;
+        padding-top: 1rem;
+        margin: 0 0 3rem 2rem;
+        min-width: min-content;
+        border-bottom: .5rem solid $secondary-color;
+    }
+
+    &__step {
+        padding: 2rem;
+        list-style: none;
+
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+
+    &__step-order {
+        font-size: 2.5rem;
+    }
+
+    &__instruction {
+        font-size: 1.8rem;
+    }
 }
 
-
-
+// From 1000px to 1500px screens (Nav bar is horizontally on top)
+@media screen and (max-width: 1500px) and (min-width: 1000px) {
+    .recipe-ingredients {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 15rem;
+    }
+}
 
 @media screen and (max-width: 1500px) {
     .recipes-container {
