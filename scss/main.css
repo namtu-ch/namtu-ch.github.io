@@ -1166,6 +1166,8 @@ body {
   display: grid;
   -ms-grid-columns: (minmax(10rem, 1fr))[6];
       grid-template-columns: repeat(6, minmax(10rem, 1fr));
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
 }
 
 .recipe-picture {
